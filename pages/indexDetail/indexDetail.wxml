@@ -1,0 +1,16 @@
+<view class="detail">
+  <image class="scenery" src="{{content.image}}"></image>
+  <view class="author">
+    <!-- <image class="photo" src="{{content.photo}}"></image> -->
+    <view class="right">
+      <view class="name">作者：{{content.title}}</view>
+      <view class="name">别名：{{content.author}}</view>
+      <view class="name">工作：{{content.price}}</view>
+      <view class="name">地址：{{content.desc}}</view>
+    </view>
+  </view>
+  <view class="introduction">
+    详细介绍：
+    <view>{{content.introduction}}</view>
+  </view>
+</view>

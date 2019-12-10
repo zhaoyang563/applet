@@ -1,0 +1,26 @@
+<!--pages/scenery/scenery.wxml-->
+<view class="title">
+  <text>{{text}}</text>
+</view>
+<view class="hr"></view>
+<swiper class="carousel" indicator-dots="true" autoplay="true" interval="2000" circular="true">
+  <swiper-item>
+    <image src="../../image/carousel/scenery_1.jpeg"></image>  
+  </swiper-item>
+  <swiper-item>
+    <image src="../../image/carousel/scenery_3.jpeg"></image>  
+  </swiper-item>
+  <swiper-item>
+    <image src="../../image/carousel/scenery_4.jpeg"></image>  
+  </swiper-item>
+</swiper>
+<view class="content">
+  <view class="fTitle">
+    <view class="scenery-title" bindtap="textShow" wx:for="{{sArray}}" data-index="{{tIndex}}" wx:for-index="tIndex">
+      {{item.title}}
+    </view>
+  </view>
+  <view class="scenery-content" wx:for="{{sArray}}" wx:if="{{dIndex == cIndex}}" wx:for-index="cIndex">
+    {{cIndex}}{{cIndex}}{{cIndex}}{{item.content}}
+  </view>
+</view>

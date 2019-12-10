@@ -1,0 +1,18 @@
+.log-item {
+  margin: 10rpx;
+}
+.List{
+  margin-bottom: 10rpx;
+  padding-top: 50rpx;
+  /* border:1px solid red; */
+}
+input{
+  background:rgb(206, 224, 40);
+  width:80%;
+  margin:20rpx auto 0;
+  border-radius:5rpx;
+}
+button{
+  width:50%;
+  margin:20rpx auto 0;
+}

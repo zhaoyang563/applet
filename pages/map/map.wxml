@@ -1,0 +1,13 @@
+<map class="mapDemo"
+  longitude="107.74992"
+  latitude="34.2741"
+  scale="18"
+  show-compass="true"
+  enable-3D="true"
+  enable-overlooking="true"
+  enable-rotate="true"
+  enable-zoom="true"
+  enable-scroll="true"
+  markers="{{markers}}"
+  >
+</map>

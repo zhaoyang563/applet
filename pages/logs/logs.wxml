@@ -1,0 +1,26 @@
+<!--logs.wxml-->
+<view>
+  <view bindtap="getAdminList">{{adminList}}</view>
+  <form bindsubmit="searchBox">
+    <input name="title" placeholder="请输入标题"></input>
+    <input name="author" placeholder="请输入作者"></input>
+    <input name="time" placeholder="请输入时间"></input>
+    <input name="page" placeholder="请输入页码"></input>
+    <input name="articleId" placeholder="请输入文章ID"></input>
+    <input name="userId" placeholder="请输入用户ID"></input>
+    <button form-type="submit">获取文章</button>
+  </form>
+  <view class="List" wx:if="{{num==1}}" data-id="{{item.id}}" wx:for="{{articleData}}" wx:key="index" bindtap="getid">
+    <view>文章id：{{item.id}}</view>
+    <view>文章题目：{{item.title}}</view>
+    <view>作者：{{item.authorName}}</view>
+    <view>文章摘要：{{item.abstract}}</view>
+    <view>用户id：{{item.unmId}}</view>
+  </view>
+  <view class="List" wx:if="{{num==2}}" wx:for="{{adminData}}" wx:key="index">
+    <view>用户id：{{item.id}}</view>
+    <view>用户密码：{{item.password}}</view>
+    <view>用户邮箱：{{item.emaill}}</view>
+    <view>账号状态：{{item.freez}}</view>
+  </view>
+</view>

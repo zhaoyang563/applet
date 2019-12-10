@@ -1,0 +1,29 @@
+.detail{
+  /* border:1px solid red; */
+  padding:20rpx;
+}
+.scenery{
+  width:100%;
+}
+/* .author{
+  margin-top:10rpx;
+  display:flex;
+  justify-content: space-around;
+  border:12rpx solid pink;
+}
+.photo{
+  width:300rpx;
+  height:300rpx;
+  border-radius: 50%;
+} */
+.right view{
+  line-height:75rpx;
+  color:rgba(0, 255, 255, 0.493);
+}
+.introduction{
+  margin-top:20rpx;
+  color:#ccc;
+}
+.introduction view{
+  text-indent: 70rpx;
+}

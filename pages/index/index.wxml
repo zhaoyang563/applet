@@ -1,0 +1,35 @@
+<view bindtap="toMap">{{mapText}}</view>
+<view class="hr"></view>
+<view class="nav">
+  <view class="nav-item" bindtap="textShow" wx:for="{{navArray}}" data-index="{{nIndex}}" wx:for-index="nIndex">
+    {{item}}
+  </view>
+</view>
+<view class="separator"></view>
+<!-- <view class="content" wx:for="{{contentArray}}" bindtap="toDetail" data-index="{{cIndex}}" wx:for-index="cIndex" wx:if="{{cIndex == dIndex}}">
+  <view class="left" wx:for="{{contentArray[cIndex]}}" wx:for-item="cell">
+    <image src="{{cell.image}}"></image>
+    <view class="right">
+      <view class="title">{{cell.title}}</view>
+      <view class="author">作者：{{cell.author}}</view>
+      <view class="price">价格：{{cell.price}}</view>
+      <view class="desc">体验：{{cell.desc}}</view>
+    </view>
+    <view class="separator-item"></view>
+  </view>
+</view> -->
+
+<view class="content1" wx:for="{{contentArray}}" data-index="{{cIndex}}" wx:for-index="cIndex" wx:if="{{cIndex == dIndex}}">
+  <view class="item" wx:for="{{contentArray[cIndex]}}" bindtap="toDetail" data-index="{{index}}" wx:for-item="cell">
+    <view class="item-content">
+      <image src="{{cell.image}}"></image>
+      <view class="item-content-right">
+        <view class="title">{{cell.title}}</view>
+        <view class="author">作者：{{cell.author}}</view>
+        <view class="price">价格：{{cell.price}}</view>
+        <view class="desc">体验：{{cell.desc}}</view>
+      </view>
+    </view>
+    <view class="item-padding"></view>
+  </view>
+</view>

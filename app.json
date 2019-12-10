@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/scenery/scenery",
+    "pages/map/map",
+    "pages/indexDetail/indexDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0c0",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap76.json",
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#00a8f3",
+    "borderStyle": "black",
+    "backgroundColor": "#f7f7fa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tabbar/index_unselected.png",
+        "selectedIconPath": "image/tabbar/index_selected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "管理员",
+        "iconPath": "image/tabbar/admin_unselected.png",
+        "selectedIconPath": "image/tabbar/admin_selected.png"
+      },
+      {
+        "pagePath": "pages/scenery/scenery",
+        "text": "风景",
+        "iconPath": "image/tabbar/scenery_unselected.png",
+        "selectedIconPath": "image/tabbar/scenery_selected.png"
+      }
+    ]
+  }
+}
